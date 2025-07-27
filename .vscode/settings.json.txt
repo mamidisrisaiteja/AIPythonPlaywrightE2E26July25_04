@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+   "github": {
+            "url": "https://api.githubcopilot.com/mcp/",
+            "requestInit": {
+                "headers": {
+                    "Authorization": "Bearer YOUR_GITHUB_PAT"
+                }
+            }
+        },
+"github-actions": {
+      "command": "node",
+      "args": [
+        "<path-to-mcp-server>/dist/index.js"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    
+     "excel": {
+      "command": "uvx",
+      "args": ["excel-mcp-server", "streamable-http"],
+      "env": {
+        "EXCEL_FILES_PATH": "TestData",
+        "FASTMCP_PORT": "8007"
+      }
+    }
+
+  }
+}

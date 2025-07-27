@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# VS Code
+.vscode/settings.json
+
+# Node modules
+node_modules/
+
+# Pytest
+.pytest_cache/
+
+# Playwright
+test-results/
+playwright-report/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
