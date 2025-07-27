@@ -1,0 +1,4 @@
+pytest==8.4.1
+pytest-bdd==8.1.0
+playwright==1.49.0
+openpyxl==3.1.5
